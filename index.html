@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim so nguyen to nho hon 10000</title>
+</head>
+<body>
+<p id="prime"></p>
+<script>
+    function checkPrime(n) {
+        for (let i = 2; i < n; i++) {
+            if (n % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    for (let j = 2; j <= 10000; j++) {
+        if (checkPrime(j)) {
+            document.getElementById('prime').innerHTML += j + " ";
+
+        }
+    }
+
+
+</script>
+</body>
+</html>
